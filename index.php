@@ -3,8 +3,8 @@
 require_once('OAuth.php');
 require_once('twitteroauth.php');
 
-define('TWITTER_KEY',    'BJroKtTZW15fzvVdn1HQ');
-define('TWITTER_SECRET', '5MuOShEOrrx8aF2XeQOc1wFG9pIwyPLK0YIx7ab2A8k');
+define('TWITTER_KEY',    '');
+define('TWITTER_SECRET', '');
 
 session_start();
 
@@ -238,16 +238,6 @@ textarea {font-size:1em;}
 function updatecount(el) {
 	document.getElementById('charcount').innerHTML = (140 - parseInt(el.value.length,10));
 }
-</script>
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-15024826-9']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
 </script>
 </head>
 
